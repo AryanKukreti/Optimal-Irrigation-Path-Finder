@@ -1,0 +1,7 @@
+Flask
+numpy
+scipy
+networkx
+matplotlib
+Pillow
+gunicorn

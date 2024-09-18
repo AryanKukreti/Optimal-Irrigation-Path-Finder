@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ML Project Demo</h1>
+            </div>
+            <ul>
+                <li><a href="/" class="nav-button">Home</a></li> <!-- Updated link to root for Home -->
+                <li><a href="/contact" class="nav-button">Contact Us</a></li> <!-- Updated link to Contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Graphics -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>About Us</h2>
+            <p>We are passionate about solving real-world challenges using Machine Learning (ML) technologies. Explore our projects and see how we apply cutting-edge solutions to drive innovation.</p>
+            <a href="#mission" class="cta-button">Learn More</a>
+        </div>
+        <div class="hero-graphic">
+            <img src="https://plus.unsplash.com/premium_vector-1683133729877-0b62598bfe52?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Illustration" />
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission-section">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>Our mission is to leverage machine learning technology to enhance decision-making, automation, and problem-solving across industries.</p>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="whatwedo" class="whatwedo-section">
+        <div class="container">
+            <h2>What We Do</h2>
+            <ul>
+                <li><strong>Data Analysis:</strong> Turning raw data into actionable insights.</li>
+                <li><strong>Predictive Modeling:</strong> Building models to forecast future trends.</li>
+                <li><strong>Automation:</strong> Enhancing efficiency with AI-driven solutions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ML Project Demo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

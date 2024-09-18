@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Pathway Optimizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">VividSoul</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li> <!-- Updated link to root for Home -->
+                <li><a href="/about">About Us</a></li> <!-- Updated link to About -->
+                <li><a href="/contact">Contact Us</a></li> <!-- Updated link to Contact -->
+            </ul>
+            <a href="#how-it-works" class="contact-btn">How It Works</a> <!-- Button to scroll to How It Works section -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Irrigation Pathway Optimizer</h1>
+            <p>VividSoul is a template with a creative design that solves all your marketing and SEO queries.</p>
+            <div class="btn-group">
+                <a href="/start" class="btn primary">Get Started</a> <!-- Updated link to Start -->
+            </div>
+        </div>
+        <div class="illustration">
+            <img src="https://img.freepik.com/free-vector/farm-tractor-concept-illustration_114360-9744.jpg?t=st=1726529488~exp=1726533088~hmac=ab09d427f1bcdaf8427ba996102b1190f60daddf093f84f671ba800234206352&w=740" alt="Illustration">
+        </div>
+    </section>
+
+    <!-- How Does It Work Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How Does It Work?</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="icon">
+                    <img src="https://img.icons8.com/?size=100&id=112468&format=png&color=000000" alt="Step 1">
+                </div>
+                <h3>Step 1: Click Get Started</h3>
+                <p>Create an account to access our services and unlock your potential.</p>
+            </div>
+
+            <div class="step">
+                <div class="icon">
+                    <img src="https://img.icons8.com/?size=100&id=c3Z8IwwzvmWR&format=png&color=000000" alt="Step 2">
+                </div>
+                <h3>Step 2: Upload Your File</h3>
+                <p>Choose your file to generate the irrigation pathfinding.</p>
+            </div>
+
+            <div class="step">
+                <div class="icon">
+                    <img src="https://img.icons8.com/?size=100&id=92776&format=png&color=000000" alt="Step 3">
+                </div>
+                <h3>Step 3: Click on Generate</h3>
+                <p>Watch your results come to life with our expert support and guidance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 VividSoul. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

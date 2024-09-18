@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Graph</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload_style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VividSoul</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="upload-section">
+        <div class="container">
+            <div class="text-container">
+                <h1>File <span>Upload</span></h1>
+                <p>Upload an image to generate the irrigation graph pathfinding.</p>
+                <p class="disclaimer">*Note: Click "Upload Image" before changing coordinates.</p> <!-- Added disclaimer -->
+                <form id="upload-form" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" required>
+                    <button type="submit">Upload Image</button>
+                </form>
+            </div>
+
+            <div class="image-container">
+                <img src="https://img.freepik.com/free-vector/upload-concept-illustration_114360-7025.jpg?t=st=1726694742~exp=1726698342~hmac=be98a6a98230e744c919bb2728391feadff4346e7df04fb1b53c71f7e8d665d6&w=740" alt="Upload Graphic">
+            </div>
+        </div>
+    </section>
+
+    <section id="slider-container" style="display: none;">
+        <div class="container">
+            <h3>Select Starting Point</h3>
+            <input type="range" id="x-slider" min="0" max="100" step="1">
+            <span id="x-coordinate">X: 0</span>
+            <input type="range" id="y-slider" min="0" max="100" step="1">
+            <span id="y-coordinate">Y: 0</span>
+            <button id="generate-button">Generate Path</button>
+            <div id="error"></div>
+            <canvas id="yourCanvasId" width="500" height="500"></canvas> <!-- Added canvas for drawing paths -->
+            <img id="plot" src="" alt="Path Image" style="display: none;">
+        </div>
+    </section>
+
+    <footer>
+        <p>VividSoul &copy; 2024 All Rights Reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

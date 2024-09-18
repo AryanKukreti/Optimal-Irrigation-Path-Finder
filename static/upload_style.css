@@ -1,0 +1,216 @@
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1; /* Ensures logo stays on the left */
+}
+
+/* Centering and spacing navigation items */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Contact Us as a button */
+.contact-button a {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Styling for upload section */
+.upload-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f4f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.text-container {
+    max-width: 45%; /* Reduce the width of the text container */
+}
+
+.text-container h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-container h1 span {
+    color: #ff9900;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.text-container form input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+}
+
+.text-container form button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for image container */
+.image-container {
+    max-width: 50%; /* Ensure image container takes up 50% of the width */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+.disclaimer {
+    background-color: #ffecb3; /* Light yellow background */
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 2rem 5%; /* Adjust margins as needed */
+    font-weight: bold;
+}
+
+/* Slider container */
+#slider-container {
+    background-color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#slider-container h3 {
+    color: #333;
+}
+
+#slider-container input[type="range"] {
+    width: 80%;
+    margin: 15px 0;
+}
+
+#generate-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#plot {
+    margin-top: 20px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the output image */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    /* Stack items vertically on small screens */
+    .upload-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-container {
+        max-width: 100%;
+        justify-content: center; /* Center the image on mobile */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    #slider-container input[type="range"] {
+        width: 100%; /* Full width range slider on small screens */
+    }
+}
