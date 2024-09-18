@@ -86,4 +86,4 @@ def generate():
     return jsonify({'plot_url': plot_url})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False)  # Update to listen on all interfaces
+    app.run(debug=True)
